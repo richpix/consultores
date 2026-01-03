@@ -1,0 +1,90 @@
+
+@import "tailwindcss";
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Text selection styling */
+::selection {
+  background-color: #1877F2;
+  color: #FFFFFF;
+}
+
+::-moz-selection {
+  background-color: #1877F2;
+  color: #FFFFFF;
+}
+
+/* Fallback utilities for brand colors (in case Tailwind config is not picked up) */
+@layer utilities {
+  .bg-brand-blue { background-color: #1877F2; }
+  .text-brand-blue { color: #1877F2; }
+ 
+
+  .bg-brand-purple { background-color: #450AF0; }
+  .text-brand-purple { color: #450AF0; }
+
+
+  .bg-brand-dark { background-color: #333333; }
+  .bg-brand-dark\/90 { background-color: rgba(51, 51, 51, 0.9); }
+  .text-brand-dark { color: #333333; }
+
+  .bg-brand-light { background-color: #F8F9FA; }
+  .text-brand-light { color: #F8F9FA; }
+
+  .bg-brand-white { background-color: #FFFFFF; }
+  .text-brand-white { color: #FFFFFF; }
+
+  /* Hover fallbacks */
+ 
+  
+  .hover\:bg-brand-dark:hover { background-color: #333333; }
+  .hover\:bg-brand-dark\/90:hover { background-color: rgba(51, 51, 51, 0.9); }
+  .hover\:bg-brand-light:hover { background-color: #F8F9FA; }
+  .hover\:bg-brand-white:hover { background-color: #FFFFFF; }
+  .hover\:bg-brand-blue:hover { background-color: #1877F2; }
+  .hover\:bg-brand-purple:hover { background-color: #5a28ee; }
+
+  .hover\:text-brand-blue:hover { color: #1877F2; }
+  .hover\:text-brand-purple:hover { color: #450AF0; }
+  .hover\:text-brand-dark:hover { color: #333333; }
+  .hover\:text-brand-light:hover { color: #F8F9FA; }
+  .hover\:text-brand-white:hover { color: #FFFFFF; }
+
+
+  
+
+  /* Border/ring fallbacks */
+  .border-brand-blue { border-color: #1877F2; }
+  .border-brand-purple { border-color: #450AF0; }
+  .ring-brand-purple\/10 { box-shadow: 0 0 0 2px rgba(69, 10, 240, 0.1); }
+  .ring-brand-blue\/10 { box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.1); }
+
+  /* Group hover fallbacks */
+  .group:hover .group-hover\:bg-brand-blue { background-color: #1877F2; }
+  .group:hover .group-hover\:text-brand-blue { color: #1877F2; }
+  .group:hover .group-hover\:bg-brand-purple { background-color: #450AF0; }
+  .group:hover .group-hover\:text-white { color: #FFFFFF; }
+  .group:hover .group-hover\:text-brand-purple { color: #450AF0; }
+
+  /* Focus/active border fallbacks */
+  .focus\:border-brand-blue:focus { border-color: #1877F2; }
+  .focus\:border-brand-purple:focus { border-color: #450AF0; }
+  .active\:border-brand-blue:active { border-color: #1877F2; }
+  .active\:border-brand-purple:active { border-color: #450AF0; }
+
+  /* Fallback font utilities matching Tailwind config */
+  .font-sans { font-family: 'Montserrat', sans-serif; }
+  .font-heading { font-family: 'Oswald', sans-serif; }
+}
