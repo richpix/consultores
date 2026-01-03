@@ -13,7 +13,7 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="font-heading text-4xl font-bold mb-8">
-              LÍDERES EN <span className="text-brand-blue">QUINTANA ROO</span>
+              TRABAJAMOS EN <span className="text-brand-blue">QUINTANA ROO</span>
             </h2>
             <p className="text-gray-300 text-lg leading-relaxed mb-8 font-light">
               Somos una empresa joven y dinámica con sede en el corazón de la Riviera Maya. 
